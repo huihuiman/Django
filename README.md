@@ -19,11 +19,13 @@
 ---------------------------------------------------------------------------------
 首頁登入後自動加載顯示購物車總數量
 <img src='https://github.com/huihuiman/Django/blob/master/Django%E5%9C%96%E7%89%87/d1.jpg'>
-未登入提示用戶先行登入
 <img src='https://github.com/huihuiman/Django/blob/master/Django%E5%9C%96%E7%89%87/d2.jpg'>
+未登入提示用戶先行登入
 <img src='https://github.com/huihuiman/Django/blob/master/Django%E5%9C%96%E7%89%87/d3.jpg'>
+圖片動態輪播顯示，並更隨數字變化
 <img src='https://github.com/huihuiman/Django/blob/master/Django%E5%9C%96%E7%89%87/d4.jpg'>
 <img src='https://github.com/huihuiman/Django/blob/master/Django%E5%9C%96%E7%89%87/d5.jpg'>
+
 <img src='https://github.com/huihuiman/Django/blob/master/Django%E5%9C%96%E7%89%87/d6.jpg'>
 <img src='https://github.com/huihuiman/Django/blob/master/Django%E5%9C%96%E7%89%87/d7.jpg'>
 <img src='https://github.com/huihuiman/Django/blob/master/Django%E5%9C%96%E7%89%87/d8.jpg'>
