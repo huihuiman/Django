@@ -1,0 +1,78 @@
+{% extends 'login.html' %}
+
+{% block title %}
+  註冊
+{% endblock %}
+
+{% block header %}
+  註冊會員
+{% endblock %}
+
+{% block anchor %}
+  <a href="/"> 首頁 </a>
+{% endblock %}
+
+{% block form %}
+  <form id="formReg" action="{% url 'reg' %}" method="post">
+    {% csrf_token %}
+    <div class="form-line">
+      <p>手機號碼</p>
+      <div>
+        <input type="text" name="uphone" class="form-control">
+        <br>
+        <span id="uphone-tip">{{ errMsg }}</span>
+      </div>
+    </div>
+    <div class="form-line">
+      <p>密碼</p>
+      <div>
+        <input type="password" name="upwd" class="form-control">
+      </div>
+    </div>
+    <div class="form-line">
+      <p>確認密碼</p>
+      <div>
+        <input type="password" name="cpwd" class="form-control">
+        <span id="cpwd-tip">{{ errMsg }}</span>
+
+      </div>
+    </div>
+    <div class="form-line">
+      <p>用戶名稱</p>
+      <div>
+        <input type="text" name="uname" class="form-control">
+      </div>
+    </div>
+    <div class="form-line">
+      <p>信箱</p>
+      <div>
+        <input type="email" name="uemail" class="form-control">
+        <span id="uemail-tip">{{ errMsg }}</span>
+      </div>
+    </div>
+    <div class="form-line">
+      <p></p>
+      <div>
+        <a href="/login/" class="goReg"> 會員登錄 </a>
+        <input type="submit" value="註冊" class="btnLogin">
+      </div>
+    </div>
+  </form>
+{% endblock %}
+
+{% block style %}
+  <style>
+    #login{
+      margin-top:30px;
+    }
+  </style>
+{% endblock %}
+
+{% block script %}
+  <script src="/static/js/jquery-1.11.3.js"></script>
+  <script src="/static/js/register.js"></script>
+{% endblock %}
+
+
+
+

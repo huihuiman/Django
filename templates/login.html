@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>
+   {% block title %} 登錄 {% endblock %}
+  </title>
+	<link rel="stylesheet" href="/static/css/login.css">
+  {% block style %}
+  {% endblock %}
+
+  {% block script %}
+  {% endblock %}
+ </head>
+ <body>
+  <div id="container">
+
+	<h2>
+      {% block header %} 會員登錄 {% endblock %}
+    </h2>
+		<p>
+			<img src="/static/img/huiyuan.jpg">
+      {% block anchor %}
+			<a href="/">首頁</a>
+      {% endblock %}
+		</p>
+		<div id="login">
+      {% block form %}
+			<form action="/login/" method="post">
+        {% csrf_token %}
+				<!--手機號碼-->
+        {% for field in form %}
+          <div class="form-line">
+            <p>{{ field.label }}</p>
+            <div>{{ field }}</div>
+          </div>
+        {% endfor %}
+				<!--記住密碼，忘記密碼-->
+				<div class="form-line">
+					<p></p>
+					<div>
+						<!-- 右浮動 -->
+						<p>
+							<a href="#">忘記密碼</a>
+							<a href="#">快速登入</a>
+						</p>
+						<!-- 不浮動 -->
+						<input type="checkbox" name="isSaved" class="isSaved" checked>記住密碼
+					</div>
+				</div>
+				<!-- 登錄按鈕-->
+				<div class="form-line">
+					<p></p>
+					<div>
+						<a href="/register/" class="goReg"> 註冊 </a>
+						<input type="submit" value="登錄" class="btnLogin">
+					</div>
+				</div>
+			</form>
+      {% endblock %}
+		</div>
+	</div>
+ </body>
+</html>

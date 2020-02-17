@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>購物車</title>
+   <link rel="stylesheet" href="/static/css/cart.css"/>
+   <script src="/static/js/jquery-1.11.3.js"></script>
+   <script src="/static/js/common.js"></script>
+   <script src="/static/js/jquery.cookie.js"></script>
+   <script src="/static/js/cart.js"></script>
+ </head>
+ <body>
+  <div id="container">
+		<div id="nav">
+			<ul class="rightNav">
+				<li id="login">
+					<a href="login">[登錄]</a>
+					<a href="register">[註冊]</a>
+				</li>
+				<li>
+					<b></b>
+					<a href="#">果園公告</a>
+				</li>
+				<li>
+					<b></b>
+					<a href="#">手機果園</a>
+				</li>
+			</ul>
+
+		    <ol class="leftNav">
+				<li class="address">
+					<span class="currentAddress">地區</span>
+					<!--三角形下標-->
+					<u></u>
+					<ul class="select">
+						<li>台北</li>
+						<li>台中</li>
+						<li>高雄</li>
+					</ul>
+				</li>
+				<li>滿千免運</li>
+
+			</ol>
+            <span>
+			    <a href="/" class="home"> 回首頁</a>
+            </span>
+		</div>
+		<!-- BANNER廣告輪播 -->
+			<div id="banner">
+			<div class="wrapper">
+				<img src="/static/img/b1.jpg">
+				<img src="/static/img/b2.jpg">
+				<img src="/static/img/b3.jpg">
+			</div>
+			<ul class="imgNav">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+
+		</div>
+
+		<!-- 四幅小廣告 -->
+		<ul id="adv-img">
+			<li>
+				<a href="#">
+					<img src="/static/img/c1.jpg">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="/static/img/c2.jpg">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="/static/img/c3.jpg">
+				</a>
+			</li>
+			<li class="no-margin">
+				<a href="#">
+					<img src="/static/img/c4.jpg">
+				</a>
+			</li>
+		</ul>
+		<!-- 網頁主體 -->
+      <div id="main">
+          <div class="title">
+            <p class="check-box">
+              <input type="checkbox" name="checkall">
+              全選
+            </p>
+            <p class="goods">商品</p>
+            <p class="price">單價</p>
+            <p class="quantity">数量</p>
+            <p class="t-sum">小計</p>
+            <p class="action">操作</p>
+          </div>
+          <div id="good-content">
+            <div class="g-item">
+              <p class="check-box">
+                <input type="checkbox"  name="checkall">
+                <img src="" width="80">
+              </p>
+              <p class="goods"></p>
+              <p class="price"></p>
+              <p class="quantity"></p>
+              <p class="t-sums">
+                <b></b>
+              </p>
+              <p class="actions">
+                <a href="#"></a>
+              </p>
+			</div>
+        </body>
+      </div>
+	</div>
+ </body>
+</html>
