@@ -1,0 +1,121 @@
+p,h2{
+	margin:0;
+}
+
+#container{
+	width:990px;
+	margin:0 auto;
+}
+
+#container>h2{
+	color:#999;
+	font-weight:normal;
+	border-bottom:1px solid #ccc;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+
+#container>p{
+	float:left;
+}
+#login{
+	float:right;
+	margin-right:50px;
+	margin-top:80px;
+}
+
+#login .form-line>p{
+	float:left;
+	font-size:16px;
+	color:#999;
+	width:64px;
+	text-align:right;
+	margin-right:20px;
+	line-height:40px;
+	height:40px;
+}
+
+#login .form-line>div{
+	float:left;
+	width:300px;
+}
+
+#login .form-control{
+	width:300px;
+	height:40px;
+	border:1px solid #ccc;
+	box-sizing:border-box;
+	outline:none;
+	padding:0 15px;
+}
+#login .form-control:focus{
+	border-color:#64a131;
+	box-shadow:0 0 5px #64a131;
+}
+
+#login .form-line{
+	margin-bottom:25px;
+	overflow:hidden;
+}
+
+#login .form-line>div>p{
+	float:right;
+}
+#login .form-line>div>p a{
+	color:#999;
+	text-decoration:underline;
+}
+#login .isSaved{
+	width:18px;
+	height:18px;
+	vertical-align:middle;
+}
+
+#login .goReg{
+	float:right;
+	width:145px;
+	height:38px;
+	border:1px solid #64A131;
+	border-radius:5px;
+	box-sizing:border-box;
+	text-align:center;
+	line-height:38px;
+	text-decoration:none;
+	color:#7BAE55;
+	font-size:18px;
+	background-color:#f5ffed;
+}
+#login .btnLogin{
+	width:145px;
+	height:38px;
+	border:none;
+	border-radius:5px;
+	background-color:#64a131;
+	color:#fff;
+	font-size:18px;
+}
+
+#container>p{
+	/*相對定位：配合超級鏈接做絕對定位*/
+	position:relative;
+}
+#container>p>a{
+	/*絕對定位，再p元素中實現位置偏移*/
+	position:absolute;
+	bottom:25px;
+	left:173px;
+	width:154px;
+	height:48px;
+	border:1px solid #64A131;
+	box-sizing:border-box;
+	border-radius:5px;
+	font-size:18px;
+	color:#64A131;
+	text-align:center;
+	line-height:48px;
+}
+
+
+
+
+
