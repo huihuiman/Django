@@ -15,8 +15,11 @@
 5.移除商品時，異步刪除購物車內容並同時加載購物車商品總數量與總金額
 
 6.註冊使用者時，驗證是否已有相同ID與EMAIL、重複密碼驗證是否相同
-     
+ 
+---------------------------------------------------------------------------------
+首頁登入後自動加載顯示購物車總數量
 <img src='https://github.com/huihuiman/Django/blob/master/Django%E5%9C%96%E7%89%87/d1.jpg'>
+未登入提示用戶先行登入
 <img src='https://github.com/huihuiman/Django/blob/master/Django%E5%9C%96%E7%89%87/d2.jpg'>
 <img src='https://github.com/huihuiman/Django/blob/master/Django%E5%9C%96%E7%89%87/d3.jpg'>
 <img src='https://github.com/huihuiman/Django/blob/master/Django%E5%9C%96%E7%89%87/d4.jpg'>
