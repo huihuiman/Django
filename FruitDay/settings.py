@@ -125,10 +125,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-#靜態資源路徑
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
 
-# SESSION時效性設置
 SESSION_COOKIE_AGE=60*60*24
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
